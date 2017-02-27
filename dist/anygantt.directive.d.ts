@@ -12,5 +12,6 @@ export declare class AnyganttDirective implements OnInit {
     acInstance: anychart.charts.Gantt;
     acChartDraw: (chart: anychart.core.Chart) => any;
     acSplitterPosition: string;
+    acChartId: string;
     ngOnInit(): void;
 }

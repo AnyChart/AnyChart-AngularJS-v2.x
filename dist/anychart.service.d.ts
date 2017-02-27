@@ -7,5 +7,6 @@ export declare class AnychartService {
     getCharts(): {
         [key: string]: Chart;
     };
+    getChart(id: string): Chart;
     drawAll(): void;
 }

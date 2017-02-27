@@ -19,6 +19,7 @@ export class AnychartDirective implements OnInit {
   @Input() acLegend: any;
   @Input() acInstance: anychart.core.Chart;
   @Input() acChartDraw: (chart: anychart.core.Chart) => any;
+  @Input() acChartId: string;
 
   ngOnInit() {
     let instance = this.acInstance || anychart[this.acType || 'line']();
@@ -35,7 +36,7 @@ export class AnychartDirective implements OnInit {
       instance.legend(legend);
     }
 
-    this.acService.addChart(instance, this.acChartDraw, undefined, this.el.nativeElement);
+    this.acService.addChart(instance, this.acChartDraw, this.acChartId, this.el.nativeElement);
   }
 
 }

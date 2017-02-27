@@ -7,5 +7,6 @@ export declare class AnystockDirective implements OnInit {
     constructor(el: ElementRef, acService: AnychartService);
     acInstance: anychart.charts.Stock;
     acChartDraw: (chart: anychart.core.Chart) => any;
+    acChartId: string;
     ngOnInit(): void;
 }

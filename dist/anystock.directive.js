@@ -17,7 +17,7 @@ let AnystockDirective = class AnystockDirective {
     }
     ngOnInit() {
         let instance = this.acInstance;
-        this.acService.addChart(instance, this.acChartDraw, undefined, this.el.nativeElement);
+        this.acService.addChart(instance, this.acChartDraw, this.acChartId, this.el.nativeElement);
     }
 };
 __decorate([
@@ -28,6 +28,10 @@ __decorate([
     core_1.Input(), 
     __metadata('design:type', Function)
 ], AnystockDirective.prototype, "acChartDraw", void 0);
+__decorate([
+    core_1.Input(), 
+    __metadata('design:type', String)
+], AnystockDirective.prototype, "acChartId", void 0);
 AnystockDirective = __decorate([
     core_1.Directive({
         selector: '[anystock]'

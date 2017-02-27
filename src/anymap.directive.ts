@@ -20,6 +20,7 @@ export class AnymapDirective implements OnInit {
     @Input() acInstance: anychart.charts.Map;
     @Input() acChartDraw: (chart: anychart.core.Chart) => any;
     @Input() acGeoData: string;
+    @Input() acChartId: string;
 
     ngOnInit() {
         let instance = this.acInstance || anychart[this.acType || 'map'](this.acData);
@@ -32,7 +33,7 @@ export class AnymapDirective implements OnInit {
         if (this.acLegend)
             instance.legend(this.acLegend !== 'false');
 
-        this.acService.addChart(instance, this.acChartDraw, undefined, this.el.nativeElement);
+        this.acService.addChart(instance, this.acChartDraw, this.acChartId, this.el.nativeElement);
     }
 
 }

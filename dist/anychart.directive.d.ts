@@ -11,5 +11,6 @@ export declare class AnychartDirective implements OnInit {
     acLegend: any;
     acInstance: anychart.core.Chart;
     acChartDraw: (chart: anychart.core.Chart) => any;
+    acChartId: string;
     ngOnInit(): void;
 }

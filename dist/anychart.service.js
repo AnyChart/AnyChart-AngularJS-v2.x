@@ -30,6 +30,9 @@ let AnychartService = class AnychartService {
     getCharts() {
         return this.charts_;
     }
+    getChart(id) {
+        return this.charts_[id];
+    }
     drawAll() {
         for (let key in this.charts_) {
             this.charts_[key].applyDraw();

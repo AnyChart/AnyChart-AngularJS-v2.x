@@ -26,7 +26,7 @@ let AnychartDirective = class AnychartDirective {
                 legend = legend !== 'false';
             instance.legend(legend);
         }
-        this.acService.addChart(instance, this.acChartDraw, undefined, this.el.nativeElement);
+        this.acService.addChart(instance, this.acChartDraw, this.acChartId, this.el.nativeElement);
     }
 };
 __decorate([
@@ -53,6 +53,10 @@ __decorate([
     core_1.Input(), 
     __metadata('design:type', Function)
 ], AnychartDirective.prototype, "acChartDraw", void 0);
+__decorate([
+    core_1.Input(), 
+    __metadata('design:type', String)
+], AnychartDirective.prototype, "acChartId", void 0);
 AnychartDirective = __decorate([
     core_1.Directive({
         selector: '[anychart]'

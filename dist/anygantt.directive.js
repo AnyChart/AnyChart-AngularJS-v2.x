@@ -28,7 +28,7 @@ let AnyganttDirective = class AnyganttDirective {
                 instance.splitterPosition(+this.acSplitterPosition);
             }
         }
-        this.acService.addChart(instance, this.acChartDraw, undefined, this.el.nativeElement);
+        this.acService.addChart(instance, this.acChartDraw, this.acChartId, this.el.nativeElement);
     }
 };
 __decorate([
@@ -59,6 +59,10 @@ __decorate([
     core_1.Input(), 
     __metadata('design:type', String)
 ], AnyganttDirective.prototype, "acSplitterPosition", void 0);
+__decorate([
+    core_1.Input(), 
+    __metadata('design:type', String)
+], AnyganttDirective.prototype, "acChartId", void 0);
 AnyganttDirective = __decorate([
     core_1.Directive({
         selector: '[anygantt]'

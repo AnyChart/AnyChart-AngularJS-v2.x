@@ -20,6 +20,7 @@ export class AnyganttDirective implements OnInit {
     @Input() acInstance: anychart.charts.Gantt;
     @Input() acChartDraw: (chart: anychart.core.Chart) => any;
     @Input() acSplitterPosition: string;
+    @Input() acChartId: string;
 
     ngOnInit() {
         let instance = this.acInstance || anychart[this.acType]();
@@ -37,7 +38,7 @@ export class AnyganttDirective implements OnInit {
             }
         }
 
-        this.acService.addChart(instance, this.acChartDraw, undefined, this.el.nativeElement);
+        this.acService.addChart(instance, this.acChartDraw, this.acChartId, this.el.nativeElement);
     }
 
 }

@@ -12,5 +12,6 @@ export declare class AnymapDirective implements OnInit {
     acInstance: anychart.charts.Map;
     acChartDraw: (chart: anychart.core.Chart) => any;
     acGeoData: string;
+    acChartId: string;
     ngOnInit(): void;
 }

@@ -23,6 +23,10 @@ export class AnychartService {
     return this.charts_;
   }
 
+  public getChart(id: string) {
+    return this.charts_[id];
+  }
+
   public drawAll() {
     for (let key in this.charts_) {
       this.charts_[key].applyDraw();

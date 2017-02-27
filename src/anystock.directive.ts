@@ -15,10 +15,11 @@ export class AnystockDirective implements OnInit {
 
     @Input() acInstance: anychart.charts.Stock;
     @Input() acChartDraw: (chart: anychart.core.Chart) => any;
+    @Input() acChartId: string;
 
     ngOnInit() {
         let instance = this.acInstance;
-        this.acService.addChart(instance, this.acChartDraw, undefined, this.el.nativeElement);
+        this.acService.addChart(instance, this.acChartDraw, this.acChartId, this.el.nativeElement);
     }
 
 }

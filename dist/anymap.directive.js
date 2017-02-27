@@ -22,7 +22,7 @@ let AnymapDirective = class AnymapDirective {
         instance.title(this.acTitle);
         if (this.acLegend)
             instance.legend(this.acLegend !== 'false');
-        this.acService.addChart(instance, this.acChartDraw, undefined, this.el.nativeElement);
+        this.acService.addChart(instance, this.acChartDraw, this.acChartId, this.el.nativeElement);
     }
 };
 __decorate([
@@ -53,6 +53,10 @@ __decorate([
     core_1.Input(), 
     __metadata('design:type', String)
 ], AnymapDirective.prototype, "acGeoData", void 0);
+__decorate([
+    core_1.Input(), 
+    __metadata('design:type', String)
+], AnymapDirective.prototype, "acChartId", void 0);
 AnymapDirective = __decorate([
     core_1.Directive({
         selector: '[anymap]'

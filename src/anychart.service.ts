@@ -5,7 +5,7 @@ import { Chart } from './Chart';
 export class AnychartService {
   private uid_: number = 0;
 
-  private charts_: { [key:string]:Chart; } = {};
+  private charts_: { [key:string]:any; } = {};
 
   private getUid_() {
     return 'acServiceChart' + this.uid_++;

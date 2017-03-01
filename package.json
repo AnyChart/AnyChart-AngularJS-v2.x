@@ -1,7 +1,7 @@
 {
   "name": "anychart-angular2",
   "version": "1.0.0",
-  "description": "Angular2 diretives for AnyChart",
+  "description": "Angular2 directives for AnyChart",
   "scripts": {
     "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
     "watch": "tsc -p src -w",
@@ -39,16 +39,7 @@
   ],
   "author": "AnyChart <contact@anychart.com> (http://anychart.com)",
   "license": "Apache-2.0",
-  "homepage": "https://anychart.com",
-  "contributors": [
-    "Roman Lubushkin <roman.lubushkin@anychart.com>",
-    "Alexander Kudryavtsev <alexander.kudryavtsev@anychart.com>",
-    "Anton Kagakin <anton.kagakin@anychart.com>",
-    "Anton Saukh <anton.saukh@anychart.com>",
-    "Sergey Medvedev <sergey.medvedev@anychart.com>",
-    "Vitaly Radionov <vitaly.radionov@anychart.com>",
-    "Eugene Averchenko <eugene.averchenko@anychart.com>"
-  ],
+  "homepage": "https://github.com/AnyChart/AnyChart-AngularJS-2.x",
   "dependencies": {
     "@angular/common": "~2.4.0",
     "@angular/compiler": "~2.4.0",
@@ -59,7 +50,7 @@
     "@angular/platform-browser-dynamic": "~2.4.0",
     "@angular/router": "~3.4.0",
     "angular-in-memory-web-api": "~0.2.4",
-    "anychart": "^7.12.0",
+    "anychart": "^7.13.0",
     "core-js": "^2.4.1",
     "rxjs": "5.0.1",
     "systemjs": "0.19.40",

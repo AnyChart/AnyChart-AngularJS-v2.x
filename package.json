@@ -1,7 +1,7 @@
 {
   "name": "anychart-angular2",
-  "version": "0.0.1",
-  "description": "Anychart Angular 2 integration",
+  "version": "1.0.0",
+  "description": "Angular2 diretives for AnyChart",
   "scripts": {
     "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
     "watch": "tsc -p src -w",
@@ -9,19 +9,46 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git@github.com:AnyChart/AnyChart-AngularJS-2.x.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AnyChart/AnyChart-AngularJS-2.x/issues"
   },
   "keywords": [
-    "Angular",
-    "2",
-    "Angular2",
-    "Anychart"
+    "anychart",
+    "anystock",
+    "anygantt",
+    "anymap",
+    "charts",
+    "javascript charts",
+    "ajax charts",
+    "plots",
+    "line charts",
+    "bar charts",
+    "pie charts",
+    "javascript plots",
+    "ajax plots",
+    "javascript",
+    "SVG",
+    "HTML5",
+    "framework",
+    "VML",
+    "angular",
+    "angularjs",
+    "angular2"
   ],
-  "license": "MIT",
-  "bugs": {
-    "url": ""
-  },
-  "homepage": "",
+  "author": "AnyChart <contact@anychart.com> (http://anychart.com)",
+  "license": "Apache-2.0",
+  "homepage": "https://anychart.com",
+  "contributors": [
+    "Roman Lubushkin <roman.lubushkin@anychart.com>",
+    "Alexander Kudryavtsev <alexander.kudryavtsev@anychart.com>",
+    "Anton Kagakin <anton.kagakin@anychart.com>",
+    "Anton Saukh <anton.saukh@anychart.com>",
+    "Sergey Medvedev <sergey.medvedev@anychart.com>",
+    "Vitaly Radionov <vitaly.radionov@anychart.com>",
+    "Eugene Averchenko <eugene.averchenko@anychart.com>"
+  ],
   "dependencies": {
     "@angular/common": "~2.4.0",
     "@angular/compiler": "~2.4.0",

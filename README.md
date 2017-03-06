@@ -161,25 +161,24 @@ available run commands (including build command) and list of dependencies.
 
 ## Demos overview
 See these samples to learn how things work:
-* **[Anychart_Load_Data_From_Json.html](https://github.com/AnyChart/AnyChart-AngularJS/blob/master/demos/Anychart_Load_Data_From_Json.html)**: Demo of async data loading. Also
+* **[Load_Data_From_Json](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos/Load_Data_From_Json)**: Demo of async data loading. Also
 shows how AnychartService can be used. **Please, note:** This demo can launched only from a web-server, in browser window,  because of cross origin requests security issues. 
-* **[Custom_Stage.html](https://github.com/AnyChart/AnyChart-AngularJS/blob/master/demos/Full_Custom_Stage.html)**: Demonstrates how to create and use a custom stage.
-* **[Gantt_Project_After_Draw.html](https://github.com/AnyChart/AnyChart-AngularJS/blob/master/demos/Gantt_Project_After_Draw.html)**: Shows how to create Gantt Project
+* **[Gantt_Project_After_Draw](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos/Gantt_Project_After_Draw)**: Shows how to create Gantt Project
 Chart and add the after-draw handler.
-* **[Gantt_Resource_Instance_Usage.html](https://github.com/AnyChart/AnyChart-AngularJS/blob/master/demos/Gantt_Resource_Instance_Usage.html)**: Shows how to use manually created 
+* **[Gantt_Resource_Instance_Usage](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos/Gantt_Resource_Instance_Usage)**: Shows how to use manually created 
 instance of a Gantt Resource chart and how to add the after-draw handler.
-* **[Line_Chart_After_Draw.html](https://github.com/AnyChart/AnyChart-AngularJS/blob/master/demos/Line_Chart_After_Draw.html)**: Demonstrates how to create and use instance
+* **[Line_Chart_After_Draw](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos/Line_Chart_After_Draw)**: Demonstrates how to create and use instance
 of a chart and add the after-draw handler.
-* **[Line_Chart_Data_Streaming.html](https://github.com/AnyChart/AnyChart-AngularJS/blob/master/demos/Line_Chart_Data_Streaming.html)**: Simple data-streaming demo.
-* **[Simple_Charts_On_Stage.html](https://github.com/AnyChart/AnyChart-AngularJS/blob/master/demos/Simple_Charts_On_Stage.html)**: Demonstrates how to create and add simple 
+* **[Line_Chart_Data_Streaming](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos/Line_Chart_Data_Streaming)**: Simple data-streaming demo.
+* **[Simple_Charts_On_Stage](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos/Simple_Charts_On_Stage)**: Demonstrates how to create and add simple 
 charts on the anychart stage and how to add the after-draw handler.
-* **[Simple_Gantt_Project.html](https://github.com/AnyChart/AnyChart-AngularJS/blob/master/demos/Simple_Gantt_Project.html)**: Simple Gantt Project Chart demo.
-* **[Simple_Map.html](https://github.com/AnyChart/AnyChart-AngularJS/blob/master/demos/Simple_Map.html)**: Simple Anymap demo.
-* **[Simple_Pie.html](https://github.com/AnyChart/AnyChart-AngularJS/blob/master/demos/Simple_Pie.html)**: Simple Pie chart demo.
-* **[Simple_Stock_Area.html](https://github.com/AnyChart/AnyChart-AngularJS/blob/master/demos/Simple_Stock_Area.html)**: Simple AnyStock demo.
-* **[Software_Sales_Dashboard.html](https://github.com/AnyChart/AnyChart-AngularJS/blob/master/demos/Software_Sales_Dashboard.html)**: Demonstrates how to use `anychart-stage`
+* **[Simple_Gantt_Project](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos/Simple_Gantt_Project)**: Simple Gantt Project Chart demo.
+* **[Simple_Map](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos/Simple_Map)**: Simple Anymap demo.
+* **[Simple_Pie](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos/Simple_Pie)**: Simple Pie chart demo.
+* **[Simple_Stock_Area](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos/Simple_Stock_Area)**: Simple AnyStock demo.
+* **[Software_Sales_Dashboard](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos/Software_Sales_Dashboard)**: Demonstrates how to use `anychart-stage`
  directive to build the interactive dashboard.
-* **[World_Map_Instance_After_Draw.html](https://github.com/AnyChart/AnyChart-AngularJS/blob/master/demos/World_Map_Instance_After_Draw.html)**: World map demo. Shows how to
+* **[World_Map_Instance_After_Draw](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos/World_Map_Instance_After_Draw)**: World map demo. Shows how to
  use map chart instance and how to add the after-draw handler.
 
 

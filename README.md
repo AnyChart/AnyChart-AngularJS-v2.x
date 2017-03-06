@@ -146,7 +146,7 @@ Anychart typescript definition file. Used to correctly compile source
 code to **dist/** directory.
 
 - **dist/** -
-Output directory that contains compiled *.js and *.d.ts files to provide
+Output directory that contains compiled `js` and `d.ts` files to provide
 availability to use this integration as library. The general component
 declarations (**components.js** and **components.d.ts**) rely on this directory
 content.

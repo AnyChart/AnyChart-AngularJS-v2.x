@@ -27,10 +27,14 @@ You can install Angular2-plugin using **npm**, **bower** or **yarn**:
 * `bower install anychart-angular2`
 * `yarn add anychart-angular2`
 
-#### Git
+#### Direct download
+     
+You can download compiled Angular2 components directly from the 
+[dist](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/dist) folder.
 
-AnyChart-Angular2 integration is available in [GitHub repository](https://github.com/AnyChart/AnyChart-AngularJS-2.x). 
-
+Please, note: [components.js](https://github.com/AnyChart/AnyChart-AngularJS-2.x/blob/master/components.js) and
+[components.d.ts](https://github.com/AnyChart/AnyChart-AngularJS-2.x/blob/master/components.d.ts) files 
+export basic Anychart-Angular2 integration functionality.
 
 ## Quick start
 Here's a basic sample that shows how to quickly create an Angular2 application with AnyChart component:

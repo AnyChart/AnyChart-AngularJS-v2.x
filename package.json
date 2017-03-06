@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Angular2 directives for AnyChart",
   "scripts": {
-    "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
     "watch": "tsc -p src -w",
     "build": "rm -rf dist && tsc -p src"
   },

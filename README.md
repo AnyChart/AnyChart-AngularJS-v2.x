@@ -174,10 +174,10 @@ charts on the anychart stage and how to add the after-draw handler.
 * **[Simple Gantt Project](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos/Simple_Gantt_Project)**: Simple Gantt Project Chart demo.
 * **[Simple Map](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos/Simple_Map)**: Simple AnyMap demo.
 * **[Simple Pie](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos/Simple_Pie)**: Simple Pie chart demo.
-* **[Simple_Stock_Area](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos/Simple_Stock_Area)**: Simple AnyStock demo.
-* **[Software_Sales_Dashboard](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos/Software_Sales_Dashboard)**: Shows how to use `anychart-stage`
+* **[Simple Stock Area](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos/Simple_Stock_Area)**: Simple AnyStock demo.
+* **[Software Sales Dashboard](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos/Software_Sales_Dashboard)**: Shows how to use `anychart-stage`
  directive to build an interactive dashboard.
-* **[World_Map_Instance_After_Draw](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos/World_Map_Instance_After_Draw)**: World map demo. Shows how to
+* **[World Map Instance After Draw](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos/World_Map_Instance_After_Draw)**: World map demo. Shows how to
  use map chart instance and how to add the after-draw handler.
 
 ## Contacts

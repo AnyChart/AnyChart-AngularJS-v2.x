@@ -10,7 +10,8 @@ with [Angular2 Framework](https://angular.io/).
 
 * [Download and install](#download-and-install)
 * [Quick start](#quick-start)
-* [Build and run](#build-and-run)
+* [Run the demo](#run-the-demo)
+* [Build](#build)
 * [Package directory](#package-directory)
 * [Demos overview](#demos-overview)
 * [Contacts](#contacts)
@@ -74,25 +75,27 @@ Here's a basic sample that shows how to quickly create an Angular2 application w
 
 
 
-## Build and run 
-In [demos](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos) the 
-[SystemJS](https://github.com/systemjs/systemjs) loader is used for 
-dynamic modules loading.
+## Run the demo 
+1) Go to any of [demos](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos)
+ directory 
+2) Install all dependencies with `npm install` command.
+3) Start the demo with `npm run start` command. 
 
-1) Despite the AnyChart-Angular2 integration is available with package managers,
+
+
+## Build
+
+1) In [demos](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos) the 
+   [SystemJS](https://github.com/systemjs/systemjs) loader is used for 
+   dynamic modules loading.
+   Despite the AnyChart-Angular2 integration is available with package managers,
    the license allows to modify and use it freely. This quick start guide
    clarifies the structure of integration project and explains how it works and 
    can be used.
    
-   Since the integration is cloned from GitHub and Node Package Manager 
-   (`npm` command) is available in command line, the following command compiles
-   source code to **dist/** directory:
-   ```sh
-   npm run build
-   ``` 
-   
-2) If needed, `package.json` of demo-application can be configured to declare custom run-commands
-and to add required dependencies excepting already included.
+2) If needed, `package.json` of [demo](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos)-application 
+can be configured to declare custom run-commands and to add required 
+dependencies excepting already included.
 
 3) Run `npm install` command to load all required npm modules.
 
@@ -117,6 +120,13 @@ like described in [Quick start](#quick-start).
 7) Since 'app' folder is declared in `systemjs.config.js` as application root 
 directory, the application's Angular2 modules and components can be created
 right there.
+
+8) Since the integration is cloned from GitHub and Node Package Manager 
+(`npm` command) is available in command line, the following command compiles
+source code to **dist/** directory:
+```sh
+npm run build
+``` 
 
 
 ## Package directory

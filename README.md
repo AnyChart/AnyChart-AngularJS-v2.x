@@ -43,7 +43,7 @@ Here's a basic sample that shows how to quickly create an Angular2 application w
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Angular QuickStart</title>
+    <title>Angular Quick Start</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -85,48 +85,42 @@ Here's a basic sample that shows how to quickly create an Angular2 application w
 
 ## Build
 
-1) In [demos](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos) the 
-   [SystemJS](https://github.com/systemjs/systemjs) loader is used for 
-   dynamic modules loading.
-   Despite the AnyChart-Angular2 integration is available with package managers,
-   the license allows to modify and use it freely. This quick start guide
-   clarifies the structure of integration project and explains how it works and 
-   can be used.
+1) Despite the AnyChart-Angular2 integration is available with package managers, the license allows to modify and use it freely (though you [need AnyChart license to use the library](http://anychart.com/buy) itself in commercial projects). This quick start guide clarifies the structure of integration project and explains how it works and how it can be used.
+
+If the integration is cloned from GitHub and Node Package Manager (`npm` command) is available in command line, the following command compiles source code to **dist/** directory:
+
+```sh
+npm run build
+``` 
    
-2) If needed, `package.json` of [demo](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos)-application 
-can be configured to declare custom run-commands and to add required 
-dependencies excepting already included.
+2) If needed, `package.json` of demo-application can be configured to declare custom run-commands
+and to add required dependencies excepting already included.
 
 3) Run `npm install` command to load all required npm modules.
 
 4) Configure `systemjs.config.js` to declare the mapping of dependencies of
 application (see any [demo](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos) 
-to realise the basic configuration). In 'map'-section this integration library is declared
+to see the basic configuration). In 'map'-section AnyChart integration library is declared:
+
 ```
 ...
 'anychart-angular2': 'node_modules/anychart-angular2'
 ```
 
-5) Also in 'packages'-section anychart-angular2 library is declared as well:
+5) In 'packages'-section anychart-angular2 library is declared:
+
 ```
 'anychart-angular2': {
   main: 'index'
 }
 ```
 
-6) These actions allow to use anychart-angular2 integration in application
-like described in [Quick start](#quick-start).
+6) These actions allow to use anychart-angular2 integration in an application
+like one described in [Quick start](#quick-start).
 
 7) Since 'app' folder is declared in `systemjs.config.js` as application root 
 directory, the application's Angular2 modules and components can be created
 right there.
-
-8) Since the integration is cloned from GitHub and Node Package Manager 
-(`npm` command) is available in command line, the following command compiles
-source code to **dist/** directory:
-```sh
-npm run build
-``` 
 
 
 ## Package directory
@@ -156,8 +150,7 @@ Anychart typescript definition file. Used to correctly compile source
 code to **dist/** directory.
 
 - **dist/** -
-Output directory that contains compiled `js` and `d.ts` files to provide
-availability to use this integration as library. The general component
+Output directory that contains compiled `js` and `d.ts` files. The general component
 declarations (**components.js** and **components.d.ts**) rely on this directory
 content.
 
@@ -170,32 +163,29 @@ Components definition. Relies on **dist/** directory content.
  
 - **package.json** - 
 Package manager configuration file. Also contains descriptions of
-available run commands (including build command) and list of dependencies. 
-
+available run commands (including build command) and the list of dependencies. 
 
 ## Demos overview
 See these samples to learn how things work:
-* **[Load_Data_From_Json](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos/Load_Data_From_Json)**: Demo of async data loading. Also
-shows how AnychartService can be used. **Please, note:** This demo can launched only from a web-server, in browser window,  because of cross origin requests security issues. 
-* **[Gantt_Project_After_Draw](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos/Gantt_Project_After_Draw)**: Shows how to create Gantt Project
+* **[Load Data From JSON](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos/Load_Data_From_Json)**: Async data loading sample. Also
+shows how AnychartService can be used. **Note:** this demo can be launched only from a web-server, in browser window, because of cross origin requests security issues. 
+* **[Gantt Project After Draw](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos/Gantt_Project_After_Draw)**: Shows how to create a Gantt Project
 Chart and add the after-draw handler.
-* **[Gantt_Resource_Instance_Usage](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos/Gantt_Resource_Instance_Usage)**: Shows how to use manually created 
+* **[Gantt Resource with Instance](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos/Gantt_Resource_Instance_Usage)**: Shows how to use manually created 
 instance of a Gantt Resource chart and how to add the after-draw handler.
-* **[Line_Chart_After_Draw](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos/Line_Chart_After_Draw)**: Demonstrates how to create and use instance
+* **[Line Chart After Draw](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos/Line_Chart_After_Draw)**: Shows how to create and use instance
 of a chart and add the after-draw handler.
-* **[Line_Chart_Data_Streaming](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos/Line_Chart_Data_Streaming)**: Simple data-streaming demo.
-* **[Simple_Charts_On_Stage](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos/Simple_Charts_On_Stage)**: Demonstrates how to create and add simple 
+* **[Line Chart Data Streaming](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos/Line_Chart_Data_Streaming)**: Simple data streaming demo.
+* **[Simple Charts On Stage](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos/Simple_Charts_On_Stage)**: Shows how to create and add simple 
 charts on the anychart stage and how to add the after-draw handler.
-* **[Simple_Gantt_Project](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos/Simple_Gantt_Project)**: Simple Gantt Project Chart demo.
-* **[Simple_Map](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos/Simple_Map)**: Simple Anymap demo.
-* **[Simple_Pie](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos/Simple_Pie)**: Simple Pie chart demo.
-* **[Simple_Stock_Area](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos/Simple_Stock_Area)**: Simple AnyStock demo.
-* **[Software_Sales_Dashboard](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos/Software_Sales_Dashboard)**: Demonstrates how to use `anychart-stage`
- directive to build the interactive dashboard.
-* **[World_Map_Instance_After_Draw](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos/World_Map_Instance_After_Draw)**: World map demo. Shows how to
+* **[Simple Gantt Project](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos/Simple_Gantt_Project)**: Simple Gantt Project Chart demo.
+* **[Simple Map](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos/Simple_Map)**: Simple AnyMap demo.
+* **[Simple Pie](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos/Simple_Pie)**: Simple Pie chart demo.
+* **[Simple Stock Area](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos/Simple_Stock_Area)**: Simple AnyStock demo.
+* **[Software Sales Dashboard](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos/Software_Sales_Dashboard)**: Shows how to use `anychart-stage`
+ directive to build an interactive dashboard.
+* **[World Map Instance After Draw](https://github.com/AnyChart/AnyChart-AngularJS-2.x/tree/master/demos/World_Map_Instance_After_Draw)**: World map demo. Shows how to
  use map chart instance and how to add the after-draw handler.
-
-
 
 ## Contacts
 
@@ -211,7 +201,7 @@ charts on the anychart stage and how to add the after-draw handler.
 * [Download AnyChart](http://www.anychart.com/download/)
 * [AnyChart Licensing](http://www.anychart.com/buy/)
 * [AnyChart Support](http://www.anychart.com/support/)
-* [Report Issues](http://github.com/AnyChart/anychart/issues)
+* [Report Issues](https://github.com/AnyChart/AnyChart-AngularJS-2.x/issues)
 * [AnyChart Playground](http://playground.anychart.com)
 * [AnyChart Documentation](http://docs.anychart.com)
 * [AnyChart API Reference](http://api.anychart.com)

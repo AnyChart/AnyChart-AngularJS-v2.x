@@ -104,7 +104,7 @@ var AppComponent = (function () {
         core_1.Component({
             moduleId: module.id,
             selector: 'my-app',
-            template: "<div anymap style=\"width: 800px; height: 400px\" [acInstance]=\"myMap\" [acChartDraw]=\"bubblesSize\" [acData]=\"mySeriesData\" acGeoData=\"anychart.maps.world\" acTitle=\"Worlds Population by Country\"></div>",
+            template: "<div anymap style=\"width: 100%; height: 600px;\" [acInstance]=\"myMap\" [acChartDraw]=\"bubblesSize\" [acData]=\"mySeriesData\" acGeoData=\"anychart.maps.world\" acTitle=\"Worlds Population by Country\"></div>",
         }), 
         __metadata('design:paramtypes', [components_1.AnychartService])
     ], AppComponent);

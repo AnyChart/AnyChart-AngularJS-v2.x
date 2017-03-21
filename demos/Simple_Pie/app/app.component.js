@@ -28,7 +28,7 @@ var AppComponent = (function () {
         core_1.Component({
             moduleId: module.id,
             selector: 'my-app',
-            template: "<div anychart style=\"width: 500px; height: 300px\" acType=\"pie\" acTitle=\"My Simple Pie\" [acData]=\"myData\"></div>",
+            template: "<div anychart style=\"width: 100%; height: 600px;\" acType=\"pie\" acTitle=\"My Simple Pie\" [acData]=\"myData\"></div>",
         }), 
         __metadata('design:paramtypes', [components_1.AnychartService])
     ], AppComponent);

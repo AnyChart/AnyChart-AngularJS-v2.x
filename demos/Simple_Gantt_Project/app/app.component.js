@@ -42,7 +42,7 @@ var AppComponent = (function () {
         core_1.Component({
             moduleId: module.id,
             selector: 'my-app',
-            template: "<div anygantt style=\"width: 800px; height: 400px\" acType=\"ganttProject\" acTitle=\"My Gantt Project\" [acData]=\"myData\"></div>",
+            template: "<div anygantt style=\"width: 100%; height: 600px;\" acType=\"ganttProject\" acTitle=\"My Gantt Project\" [acData]=\"myData\"></div>",
         }), 
         __metadata('design:paramtypes', [components_1.AnychartService])
     ], AppComponent);

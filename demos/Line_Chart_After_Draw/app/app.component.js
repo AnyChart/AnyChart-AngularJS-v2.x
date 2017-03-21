@@ -113,7 +113,7 @@ var AppComponent = (function () {
         core_1.Component({
             moduleId: module.id,
             selector: 'my-app',
-            template: "<div anychart style=\"width: 800px; height: 400px\" [acInstance]=\"myChart\" acTitle=\"Debt-To-Income Ratios 1986-2006\" acLegend=\"true\" [acChartDraw]=\"myAfterDraw\"></div>",
+            template: "<div anychart style=\"width: 100%; height: 600px\" [acInstance]=\"myChart\" acTitle=\"Debt-To-Income Ratios 1986-2006\" acLegend=\"true\" [acChartDraw]=\"myAfterDraw\"></div>",
         }), 
         __metadata('design:paramtypes', [components_1.AnychartService])
     ], AppComponent);

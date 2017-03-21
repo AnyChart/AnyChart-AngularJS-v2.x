@@ -245,7 +245,7 @@ var AppComponent = (function () {
         core_1.Component({
             moduleId: module.id,
             selector: 'my-app',
-            template: "<div anychartStage style=\"width: 800px; height: 300px\"></div>",
+            template: "<div anychartStage style=\"width: 100%; height: 600px;\"></div>",
         }), 
         __metadata('design:paramtypes', [components_1.AnychartService])
     ], AppComponent);

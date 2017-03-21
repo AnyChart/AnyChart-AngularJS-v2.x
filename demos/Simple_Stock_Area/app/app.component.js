@@ -45,7 +45,7 @@ var AppComponent = (function () {
         core_1.Component({
             moduleId: module.id,
             selector: 'my-app',
-            template: "<div anystock style=\"width: 800px; height: 400px\" acTitle=\"Simple Stock Demo\" [acInstance]=\"myChart\" [acChartDraw]=\"selectRange\"></div>",
+            template: "<div anystock style=\"width: 100%; height: 600px;\" acTitle=\"Simple Stock Demo\" [acInstance]=\"myChart\" [acChartDraw]=\"selectRange\"></div>",
         }), 
         __metadata('design:paramtypes', [components_1.AnychartService])
     ], AppComponent);

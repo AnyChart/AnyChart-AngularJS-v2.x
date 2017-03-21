@@ -33,7 +33,7 @@ var AppComponent = (function () {
         core_1.Component({
             moduleId: module.id,
             selector: 'my-app',
-            template: "<div anychart  acType=\"line\" style=\"width: 100%; height: 600px;\" acChartId=\"myChart\"></div>",
+            template: "<div anychart  acType=\"line\" style=\"width: 100%; height: 521px;\" acChartId=\"myChart\"></div>",
         }), 
         __metadata('design:paramtypes', [components_1.AnychartService, http_1.Http])
     ], AppComponent);

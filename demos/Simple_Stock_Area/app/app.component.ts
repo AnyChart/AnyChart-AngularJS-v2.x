@@ -10,7 +10,7 @@ declare var get_ibm_daily_short_data: Function;
 @Component({
   moduleId: module.id,
   selector: 'my-app',
-  template: `<div anystock style="width: 100%; height: 600px;" acTitle="Simple Stock Demo" [acInstance]="myChart" [acChartDraw]="selectRange"></div>`,
+  template: `<div anystock style="width: 100%; height: 521px;" acTitle="Simple Stock Demo" [acInstance]="myChart" [acChartDraw]="selectRange"></div>`,
 })
 export class AppComponent {
 

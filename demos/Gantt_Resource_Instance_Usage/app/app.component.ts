@@ -7,7 +7,7 @@ declare var getData: Function;
 @Component({
   moduleId: module.id,
   selector: 'my-app',
-  template: `<div anygantt style="width: 100%; height: 600px" [acInstance]="myChart" acTitle="My Gantt Project" [acData]="myData" [acChartDraw]="myAfterDraw"></div>`,
+  template: `<div anygantt style="width: 100%; height: 479px" [acInstance]="myChart" acTitle="My Gantt Project" [acData]="myData" [acChartDraw]="myAfterDraw" acSplitterPosition="175"></div>`,
 })
 export class AppComponent {
 

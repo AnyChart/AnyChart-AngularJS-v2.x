@@ -5,7 +5,7 @@ import { AnychartService } from 'anychart-angular2/components';
 @Component({
   moduleId: module.id,
   selector: 'my-app',
-  template: `<div anymap style="width: 100%; height: 600px;" acType="choropleth" [acData]="mySeriesData" acGeoData="anychart.maps.australia" acTitle="Simple Map Demo"></div>`,
+  template: `<div anymap style="width: 100%; height: 521px;" acType="choropleth" [acData]="mySeriesData" acGeoData="anychart.maps.australia" acTitle="Simple Map Demo"></div>`,
 })
 export class AppComponent {
 

@@ -4,7 +4,7 @@ import { AnychartService } from 'anychart-angular2/components';
 @Component({
   moduleId: module.id,
   selector: 'my-app',
-  template: `<div anychart style="width: 100%; height: 600px;" acType="pie" acTitle="My Simple Pie" [acData]="myData"></div>`,
+  template: `<div anychart style="width: 100%; height: 521px;" acType="pie" acTitle="My Simple Pie" [acData]="myData"></div>`,
 })
 export class AppComponent {
 

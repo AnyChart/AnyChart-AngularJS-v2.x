@@ -6,7 +6,7 @@ import 'rxjs/Rx';
 @Component({
   moduleId: module.id,
   selector: 'my-app',
-  template: `<div anychart  acType="line" style="width: 100%; height: 600px;" acChartId="myChart"></div>`,
+  template: `<div anychart  acType="line" style="width: 100%; height: 521px;" acChartId="myChart"></div>`,
 })
 export class AppComponent {
 

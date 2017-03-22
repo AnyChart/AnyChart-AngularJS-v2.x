@@ -1,0 +1,79 @@
+{
+  "name": "lite-server",
+  "version": "2.3.0",
+  "description": "Lightweight development node server for serving a web app, providing a fallback for browser history API, loading in the browser, and injecting scripts on the fly.",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint *.js lib/*.js && istanbul cover _mocha -- -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnpapa/lite-server.git"
+  },
+  "keywords": [
+    "angular",
+    "spa",
+    "static",
+    "server",
+    "development"
+  ],
+  "contributors": [
+    {
+      "name": "John Papa",
+      "email": "john@johnpapa.net"
+    },
+    {
+      "name": "Christopher Martin",
+      "email": "cgmartin@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "bin": {
+    "lite-server": "./bin/lite-server"
+  },
+  "homepage": "https://github.com/johnpapa/lite-server#readme",
+  "dependencies": {
+    "browser-sync": "^2.18.5",
+    "connect-history-api-fallback": "^1.2.0",
+    "connect-logger": "0.0.1",
+    "lodash": "^4.11.1",
+    "minimist": "1.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^2.8.0",
+    "istanbul": "^0.4.3",
+    "mocha": "^3.2.0",
+    "mockery": "^1.6.2",
+    "sinon": "^1.17.3"
+  },
+  "gitHead": "9d0a040858e6a1f8f28a899750e1b8f9754d0814",
+  "bugs": {
+    "url": "https://github.com/johnpapa/lite-server/issues"
+  },
+  "_id": "lite-server@2.3.0",
+  "_shasum": "5b4cc8f5d5fd4836105480ab2ac48a3a0de2b0c8",
+  "_from": "lite-server@>=2.2.2 <3.0.0",
+  "_npmVersion": "3.10.8",
+  "_nodeVersion": "6.9.1",
+  "_npmUser": {
+    "name": "johnpapa",
+    "email": "john@johnpapa.net"
+  },
+  "dist": {
+    "shasum": "5b4cc8f5d5fd4836105480ab2ac48a3a0de2b0c8",
+    "tarball": "https://registry.npmjs.org/lite-server/-/lite-server-2.3.0.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "johnpapa",
+      "email": "john@johnpapa.net"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/lite-server-2.3.0.tgz_1489003660406_0.07161730993539095"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/lite-server/-/lite-server-2.3.0.tgz",
+  "readme": "ERROR: No README data found!"
+}

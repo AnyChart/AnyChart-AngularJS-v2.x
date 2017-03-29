@@ -22435,11 +22435,33 @@ declare namespace anychart.standalones.grids {
     }
 }
 
+declare namespace anychart.themes {
+    const coffee: Object;
+    const darkBlue: Object;
+    const darkEarth: Object;
+    const darkGlamour: Object;
+    const darkProvence: Object;
+    const darkTurquoise: Object;
+    const defaultTheme: Object;
+    const lightBlue: Object;
+    const lightEarth: Object;
+    const lightGlamour: Object;
+    const lightProvence: Object;
+    const lightTurquoise: Object;
+    const morning: Object;
+    const pastel: Object;
+    const sea: Object;
+    const v6: Object;
+    const wines: Object;
+}
+
 declare namespace anychart.ui {
     function chartEditorDialog(): anychart.ui.chartEditor.Dialog;
     function contextMenu(): anychart.ui.ContextMenu;
     function ganttToolbar(): anychart.ui.GanttToolbar;
     function preloader(): anychart.ui.Preloader;
+    function rangeSelector(): anychart.ui.RangeSelector;
+    function rangePicker(): anychart.ui.RangePicker;
     interface RangePicker {
         decorate(value: Element): void;
         dispose(): void;

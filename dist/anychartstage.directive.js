@@ -8,32 +8,33 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-const core_1 = require('@angular/core');
-const anychart_service_1 = require('./anychart.service');
-let AnychartStageDirective = class AnychartStageDirective {
-    constructor(el, acService) {
+var core_1 = require('@angular/core');
+var anychart_service_1 = require('./anychart.service');
+var AnychartStageDirective = (function () {
+    function AnychartStageDirective(el, acService) {
         this.el = el;
         this.acService = acService;
     }
-    ngOnInit() {
-        let stage = this.acInstance || anychart.graphics.create(this.el.nativeElement);
-        let charts = this.acService.getCharts();
-        for (let key in charts) {
-            let chart = charts[key];
+    AnychartStageDirective.prototype.ngOnInit = function () {
+        var stage = this.acInstance || anychart.graphics.create(this.el.nativeElement);
+        var charts = this.acService.getCharts();
+        for (var key in charts) {
+            var chart = charts[key];
             if (!chart.container) {
                 chart.container = stage;
             }
         }
-    }
-};
-__decorate([
-    core_1.Input(), 
-    __metadata('design:type', Object)
-], AnychartStageDirective.prototype, "acInstance", void 0);
-AnychartStageDirective = __decorate([
-    core_1.Directive({
-        selector: '[anychartStage]'
-    }), 
-    __metadata('design:paramtypes', [core_1.ElementRef, anychart_service_1.AnychartService])
-], AnychartStageDirective);
+    };
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', Object)
+    ], AnychartStageDirective.prototype, "acInstance", void 0);
+    AnychartStageDirective = __decorate([
+        core_1.Directive({
+            selector: '[anychartStage]'
+        }), 
+        __metadata('design:paramtypes', [core_1.ElementRef, anychart_service_1.AnychartService])
+    ], AnychartStageDirective);
+    return AnychartStageDirective;
+}());
 exports.AnychartStageDirective = AnychartStageDirective;

@@ -8,15 +8,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-const core_1 = require('@angular/core');
-const anychart_service_1 = require('./anychart.service');
-let AnyganttDirective = class AnyganttDirective {
-    constructor(el, acService) {
+var core_1 = require('@angular/core');
+var anychart_service_1 = require('./anychart.service');
+var AnyganttDirective = (function () {
+    function AnyganttDirective(el, acService) {
         this.el = el;
         this.acService = acService;
     }
-    ngOnInit() {
-        let instance = this.acInstance || anychart[this.acType]();
+    AnyganttDirective.prototype.ngOnInit = function () {
+        var instance = this.acInstance || anychart[this.acType]();
         if (instance.data && this.acData)
             instance.data(this.acData);
         instance.title(this.acTitle);
@@ -29,44 +29,45 @@ let AnyganttDirective = class AnyganttDirective {
             }
         }
         this.acService.addChart(instance, this.acChartDraw, this.acChartId, this.el.nativeElement);
-    }
-};
-__decorate([
-    core_1.Input(), 
-    __metadata('design:type', String)
-], AnyganttDirective.prototype, "acType", void 0);
-__decorate([
-    core_1.Input(), 
-    __metadata('design:type', Object)
-], AnyganttDirective.prototype, "acData", void 0);
-__decorate([
-    core_1.Input(), 
-    __metadata('design:type', Object)
-], AnyganttDirective.prototype, "acTitle", void 0);
-__decorate([
-    core_1.Input(), 
-    __metadata('design:type', Object)
-], AnyganttDirective.prototype, "acLegend", void 0);
-__decorate([
-    core_1.Input(), 
-    __metadata('design:type', Object)
-], AnyganttDirective.prototype, "acInstance", void 0);
-__decorate([
-    core_1.Input(), 
-    __metadata('design:type', Function)
-], AnyganttDirective.prototype, "acChartDraw", void 0);
-__decorate([
-    core_1.Input(), 
-    __metadata('design:type', String)
-], AnyganttDirective.prototype, "acSplitterPosition", void 0);
-__decorate([
-    core_1.Input(), 
-    __metadata('design:type', String)
-], AnyganttDirective.prototype, "acChartId", void 0);
-AnyganttDirective = __decorate([
-    core_1.Directive({
-        selector: '[anygantt]'
-    }), 
-    __metadata('design:paramtypes', [core_1.ElementRef, anychart_service_1.AnychartService])
-], AnyganttDirective);
+    };
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', String)
+    ], AnyganttDirective.prototype, "acType", void 0);
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', Object)
+    ], AnyganttDirective.prototype, "acData", void 0);
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', Object)
+    ], AnyganttDirective.prototype, "acTitle", void 0);
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', Object)
+    ], AnyganttDirective.prototype, "acLegend", void 0);
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', Object)
+    ], AnyganttDirective.prototype, "acInstance", void 0);
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', Function)
+    ], AnyganttDirective.prototype, "acChartDraw", void 0);
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', String)
+    ], AnyganttDirective.prototype, "acSplitterPosition", void 0);
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', String)
+    ], AnyganttDirective.prototype, "acChartId", void 0);
+    AnyganttDirective = __decorate([
+        core_1.Directive({
+            selector: '[anygantt]'
+        }), 
+        __metadata('design:paramtypes', [core_1.ElementRef, anychart_service_1.AnychartService])
+    ], AnyganttDirective);
+    return AnyganttDirective;
+}());
 exports.AnyganttDirective = AnyganttDirective;

@@ -8,59 +8,60 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-const core_1 = require('@angular/core');
-const anychart_service_1 = require('./anychart.service');
-let AnychartDirective = class AnychartDirective {
-    constructor(el, acService) {
+var core_1 = require('@angular/core');
+var anychart_service_1 = require('./anychart.service');
+var AnychartDirective = (function () {
+    function AnychartDirective(el, acService) {
         this.el = el;
         this.acService = acService;
     }
-    ngOnInit() {
-        let instance = this.acInstance || anychart[this.acType || 'line']();
+    AnychartDirective.prototype.ngOnInit = function () {
+        var instance = this.acInstance || anychart[this.acType || 'line']();
         if (instance.data && this.acData)
             instance.data(this.acData);
         instance.title(this.acTitle);
         if (this.acLegend) {
-            let legend = this.acLegend;
+            var legend = this.acLegend;
             if (typeof legend == 'string')
                 legend = legend !== 'false';
             instance.legend(legend);
         }
         this.acService.addChart(instance, this.acChartDraw, this.acChartId, this.el.nativeElement);
-    }
-};
-__decorate([
-    core_1.Input(), 
-    __metadata('design:type', String)
-], AnychartDirective.prototype, "acType", void 0);
-__decorate([
-    core_1.Input(), 
-    __metadata('design:type', Object)
-], AnychartDirective.prototype, "acData", void 0);
-__decorate([
-    core_1.Input(), 
-    __metadata('design:type', Object)
-], AnychartDirective.prototype, "acTitle", void 0);
-__decorate([
-    core_1.Input(), 
-    __metadata('design:type', Object)
-], AnychartDirective.prototype, "acLegend", void 0);
-__decorate([
-    core_1.Input(), 
-    __metadata('design:type', Object)
-], AnychartDirective.prototype, "acInstance", void 0);
-__decorate([
-    core_1.Input(), 
-    __metadata('design:type', Function)
-], AnychartDirective.prototype, "acChartDraw", void 0);
-__decorate([
-    core_1.Input(), 
-    __metadata('design:type', String)
-], AnychartDirective.prototype, "acChartId", void 0);
-AnychartDirective = __decorate([
-    core_1.Directive({
-        selector: '[anychart]'
-    }), 
-    __metadata('design:paramtypes', [core_1.ElementRef, anychart_service_1.AnychartService])
-], AnychartDirective);
+    };
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', String)
+    ], AnychartDirective.prototype, "acType", void 0);
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', Object)
+    ], AnychartDirective.prototype, "acData", void 0);
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', Object)
+    ], AnychartDirective.prototype, "acTitle", void 0);
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', Object)
+    ], AnychartDirective.prototype, "acLegend", void 0);
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', Object)
+    ], AnychartDirective.prototype, "acInstance", void 0);
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', Function)
+    ], AnychartDirective.prototype, "acChartDraw", void 0);
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', String)
+    ], AnychartDirective.prototype, "acChartId", void 0);
+    AnychartDirective = __decorate([
+        core_1.Directive({
+            selector: '[anychart]'
+        }), 
+        __metadata('design:paramtypes', [core_1.ElementRef, anychart_service_1.AnychartService])
+    ], AnychartDirective);
+    return AnychartDirective;
+}());
 exports.AnychartDirective = AnychartDirective;

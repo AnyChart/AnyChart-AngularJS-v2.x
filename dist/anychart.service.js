@@ -8,17 +8,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-const core_1 = require('@angular/core');
-const Chart_1 = require('./Chart');
-let AnychartService = class AnychartService {
-    constructor() {
+var core_1 = require('@angular/core');
+var Chart_1 = require('./Chart');
+var AnychartService = (function () {
+    function AnychartService() {
         this.uid_ = 0;
         this.charts_ = {};
     }
-    getUid_() {
+    AnychartService.prototype.getUid_ = function () {
         return 'acServiceChart' + this.uid_++;
-    }
-    addChart(instance, chartDraw, id, container) {
+    };
+    AnychartService.prototype.addChart = function (instance, chartDraw, id, container) {
         if (!instance)
             return;
         if (!id)
@@ -26,21 +26,22 @@ let AnychartService = class AnychartService {
         if (!this.charts_[id]) {
             this.charts_[id] = new Chart_1.Chart(instance, container, chartDraw);
         }
-    }
-    getCharts() {
+    };
+    AnychartService.prototype.getCharts = function () {
         return this.charts_;
-    }
-    getChart(id) {
+    };
+    AnychartService.prototype.getChart = function (id) {
         return this.charts_[id];
-    }
-    drawAll() {
-        for (let key in this.charts_) {
+    };
+    AnychartService.prototype.drawAll = function () {
+        for (var key in this.charts_) {
             this.charts_[key].applyDraw();
         }
-    }
-};
-AnychartService = __decorate([
-    core_1.Injectable(), 
-    __metadata('design:paramtypes', [])
-], AnychartService);
+    };
+    AnychartService = __decorate([
+        core_1.Injectable(), 
+        __metadata('design:paramtypes', [])
+    ], AnychartService);
+    return AnychartService;
+}());
 exports.AnychartService = AnychartService;

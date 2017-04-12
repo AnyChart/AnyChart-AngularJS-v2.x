@@ -38,9 +38,10 @@ export class AppComponent {
 
   myAfterDraw = function (chart: any) {
     chart.fitAll();
-    debugger;
-    if (document.getElementById('loader-wrapper')) {
-      document.getElementById('loader-wrapper')[0].style.display = 'none';
+    var loader = window.parent.document.getElementById('loader-wrapper');
+
+    if (loader) {
+      loader.style.display = 'none'
     }
   };
 

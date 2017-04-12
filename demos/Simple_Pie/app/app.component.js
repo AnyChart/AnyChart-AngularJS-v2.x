@@ -25,6 +25,10 @@ var AppComponent = (function () {
     }
     AppComponent.prototype.ngAfterViewInit = function () {
         this.acService.drawAll();
+        var loader = window.parent.document.getElementById('loader-wrapper');
+        if (loader) {
+            loader.style.display = 'none';
+        }
     };
     AppComponent = __decorate([
         core_1.Component({

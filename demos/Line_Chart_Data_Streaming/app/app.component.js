@@ -19,6 +19,10 @@ var AppComponent = (function () {
         this.myData = null;
         this.myAfterDraw = function (chart) {
             chart.yScale().minimum(0).maximum(100);
+            var loader = window.parent.document.getElementById('loader-wrapper');
+            if (loader) {
+                loader.style.display = 'none';
+            }
         };
         var data = [];
         for (var i = 0; i < 50; i++)

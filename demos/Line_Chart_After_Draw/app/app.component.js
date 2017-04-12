@@ -93,6 +93,10 @@ var AppComponent = (function () {
                 .useHtml(true)
                 .text('<strong>48% or greater</strong><br/>Not affordable with fixed<br/>or interest only.<br/>Negative amortization<br/>only option.');
             chart.legend().fontSize(13).padding([0, 0, 15, 0]);
+            var loader = window.parent.document.getElementById('loader-wrapper');
+            if (loader) {
+                loader.style.display = 'none';
+            }
         };
         var seriesData_1 = this.dataSet.mapAs({ x: [0], value: [1] });
         var seriesData_2 = this.dataSet.mapAs({ x: [0], value: [2] });

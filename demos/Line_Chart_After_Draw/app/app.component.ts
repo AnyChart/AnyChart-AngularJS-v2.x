@@ -122,6 +122,12 @@ export class AppComponent {
         .text('<strong>48% or greater</strong><br/>Not affordable with fixed<br/>or interest only.<br/>Negative amortization<br/>only option.');
 
     chart.legend().fontSize(13).padding([0, 0, 15, 0]);
+
+    var loader = window.parent.document.getElementById('loader-wrapper');
+
+    if (loader) {
+      loader.style.display = 'none'
+    }
   };
 
 

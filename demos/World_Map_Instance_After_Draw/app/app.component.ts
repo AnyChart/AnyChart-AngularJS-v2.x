@@ -105,6 +105,12 @@ export class AppComponent {
 
     ngAfterViewInit() {
         this.acService.drawAll();
+
+        var loader = window.parent.document.getElementById('loader-wrapper');
+
+        if (loader) {
+            loader.style.display = 'none'
+        }
     }
 
 }

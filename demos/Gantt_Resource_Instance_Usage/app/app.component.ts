@@ -42,12 +42,6 @@ export class AppComponent {
     timeline.rowHoverFill('#f4e8ec');
     timeline.rowSelectedFill('#d1b8bf');
     timeline.columnStroke('2 #90caf9');
-
-    var loader = window.parent.document.getElementById('loader-wrapper');
-
-    if (loader) {
-      loader.style.display = 'none'
-    }
   };
 
   ngAfterViewInit() {

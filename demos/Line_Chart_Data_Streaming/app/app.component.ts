@@ -24,12 +24,6 @@ export class AppComponent {
 
   myAfterDraw = function(chart: any) {
     chart.yScale().minimum(0).maximum(100);
-
-    var loader = window.parent.document.getElementById('loader-wrapper');
-
-    if (loader) {
-      loader.style.display = 'none'
-    }
   };
 
 

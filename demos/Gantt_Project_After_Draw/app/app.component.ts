@@ -38,11 +38,6 @@ export class AppComponent {
 
   myAfterDraw = function (chart: any) {
     chart.fitAll();
-    var loader = window.parent.document.getElementById('loader-wrapper');
-
-    if (loader) {
-      loader.style.display = 'none'
-    }
   };
 
   ngAfterViewInit() {

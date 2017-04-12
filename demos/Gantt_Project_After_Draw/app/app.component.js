@@ -38,10 +38,6 @@ var AppComponent = (function () {
         this.myData = anychart.data.tree(this.myRawData, anychart.enums.TreeFillingMethod.AS_TABLE);
         this.myAfterDraw = function (chart) {
             chart.fitAll();
-            var loader = window.parent.document.getElementById('loader-wrapper');
-            if (loader) {
-                loader.style.display = 'none';
-            }
         };
     }
     AppComponent.prototype.ngAfterViewInit = function () {

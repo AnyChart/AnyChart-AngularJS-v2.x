@@ -10,6 +10,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var components_1 = require('anychart-angular2/components');
+var core_2 = require('@angular/core');
+core_2.enableProdMode();
 var AppComponent = (function () {
     function AppComponent(acService) {
         this.acService = acService;

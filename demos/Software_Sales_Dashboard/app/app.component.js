@@ -10,6 +10,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var components_1 = require('anychart-angular2/components');
+var core_2 = require('@angular/core');
+core_2.enableProdMode();
 var AppComponent = (function () {
     function AppComponent(acService) {
         this.acService = acService;
@@ -42,15 +44,15 @@ var AppComponent = (function () {
             var xAxis = chart.xAxis();
             xAxis.title(false);
             xAxis.staggerMode(false);
-            chart.yAxis().labels().textFormatter(function () {
+            chart.yAxis().labels().format(function () {
                 return formatMoney(parseInt(this.value), 0, '.', ',');
             });
             // Create area series
             unitSeries = chart.area();
-            unitSeries.tooltip().titleFormatter(function () {
+            unitSeries.tooltip().titleFormat(function () {
                 return this.x;
             });
-            unitSeries.tooltip().textFormatter(function () {
+            unitSeries.tooltip().format(function () {
                 return '$' + formatMoney(this.value, 0, '.', ',');
             });
             return chart;
@@ -65,10 +67,10 @@ var AppComponent = (function () {
         }
         // Setup same settings for all charts
         function setupBarSeriesSettings(series) {
-            series.tooltip().titleFormatter(function () {
+            series.tooltip().titleFormat(function () {
                 return this.x;
             });
-            series.tooltip().textFormatter(function () {
+            series.tooltip().format(function () {
                 return '$' + formatMoney(this.value, 0, '.', ',');
             });
             series.listen('pointClick', function (e) {

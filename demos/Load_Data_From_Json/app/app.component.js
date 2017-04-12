@@ -12,6 +12,8 @@ var core_1 = require('@angular/core');
 var components_1 = require('anychart-angular2/components');
 var http_1 = require('@angular/http');
 require('rxjs/Rx');
+var core_2 = require('@angular/core');
+core_2.enableProdMode();
 var AppComponent = (function () {
     function AppComponent(acService, http) {
         this.acService = acService;

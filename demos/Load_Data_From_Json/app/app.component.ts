@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 import { AnychartService } from 'anychart-angular2/components';
 import { Http, Response } from '@angular/http';
 import 'rxjs/Rx';
+import { enableProdMode } from '@angular/core';
+
+enableProdMode();
 
 @Component({
   moduleId: module.id,

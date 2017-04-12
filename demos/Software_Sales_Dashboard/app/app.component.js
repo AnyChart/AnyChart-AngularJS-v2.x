@@ -44,15 +44,15 @@ var AppComponent = (function () {
             var xAxis = chart.xAxis();
             xAxis.title(false);
             xAxis.staggerMode(false);
-            chart.yAxis().labels().format(function () {
+            chart.yAxis().labels().textFormatter(function () {
                 return formatMoney(parseInt(this.value), 0, '.', ',');
             });
             // Create area series
             unitSeries = chart.area();
-            unitSeries.tooltip().titleFormat(function () {
+            unitSeries.tooltip().titleFormatter(function () {
                 return this.x;
             });
-            unitSeries.tooltip().format(function () {
+            unitSeries.tooltip().textFormatter(function () {
                 return '$' + formatMoney(this.value, 0, '.', ',');
             });
             return chart;
@@ -70,7 +70,7 @@ var AppComponent = (function () {
             series.tooltip().titleFormat(function () {
                 return this.x;
             });
-            series.tooltip().format(function () {
+            series.tooltip().textFormatter(function () {
                 return '$' + formatMoney(this.value, 0, '.', ',');
             });
             series.listen('pointClick', function (e) {

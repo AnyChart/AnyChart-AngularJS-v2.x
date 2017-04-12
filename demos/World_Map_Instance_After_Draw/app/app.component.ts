@@ -19,7 +19,7 @@ export class AppComponent {
         series.labels().enabled(false);
         series.selectionMode("none");
         series.tooltip().textWrap('byLetter').useHtml(true);
-        series.tooltip().format(function() {
+        series.tooltip().textFormatter(function() {
             return '<span style="color: #d9d9d9">Density</span>: ' + parseFloat(this.getData('density')).toLocaleString() + ' pop./km&#178 <br/>' +
                 '<span style="color: #d9d9d9">Population</span>: ' + parseInt(this.getData('population')).toLocaleString() + '<br/>' +
                 '<span style="color: #d9d9d9">Area</span>: ' + parseInt(this.getData('area')).toLocaleString() + ' km&#178';
@@ -33,7 +33,7 @@ export class AppComponent {
         series_choropleth.hoverFill('#D2D2D2');
         series_choropleth.labels(null);
         series_choropleth.tooltip().textWrap('byLetter').useHtml(true);
-        series_choropleth.tooltip().format(function() {
+        series_choropleth.tooltip().textFormatter(function() {
             return '<span style="color: #d9d9d9">Density</span>: ' + parseFloat(this.getData('density')).toLocaleString() + ' pop./km&#178 <br/>' +
                 '<span style="color: #d9d9d9">Population</span>: ' + parseInt(this.getData('population')).toLocaleString() + '<br/>' +
                 '<span style="color: #d9d9d9">Area</span>: ' + parseInt(this.getData('area')).toLocaleString() + ' km&#178';

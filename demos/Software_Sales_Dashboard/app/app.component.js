@@ -67,7 +67,7 @@ var AppComponent = (function () {
         }
         // Setup same settings for all charts
         function setupBarSeriesSettings(series) {
-            series.tooltip().titleFormat(function () {
+            series.tooltip().titleFormatter(function () {
                 return this.x;
             });
             series.tooltip().textFormatter(function () {

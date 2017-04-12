@@ -81,9 +81,9 @@ var AppComponent = (function () {
         series.selectionMode("none");
         series.tooltip().textWrap('byLetter').useHtml(true);
         series.tooltip().textFormatter(function () {
-            return '<span style="color: #d9d9d9">Density</span>: ' + parseFloat(this.getData('density')).toLocaleString() + ' pop./km&#178 <br/>' +
-                '<span style="color: #d9d9d9">Population</span>: ' + parseInt(this.getData('population')).toLocaleString() + '<br/>' +
-                '<span style="color: #d9d9d9">Area</span>: ' + parseInt(this.getData('area')).toLocaleString() + ' km&#178';
+            return '<span style="color: #d9d9d9">Density</span>: ' + parseFloat(this.getDataValue('density')).toLocaleString() + ' pop./km&#178 <br/>' +
+                '<span style="color: #d9d9d9">Population</span>: ' + parseInt(this.getDataValue('population')).toLocaleString() + '<br/>' +
+                '<span style="color: #d9d9d9">Area</span>: ' + parseInt(this.getDataValue('area')).toLocaleString() + ' km&#178';
         });
         var series_choropleth = this.myMap.choropleth(density_data);
         series_choropleth.selectionMode("none");
@@ -94,9 +94,9 @@ var AppComponent = (function () {
         series_choropleth.labels(null);
         series_choropleth.tooltip().textWrap('byLetter').useHtml(true);
         series_choropleth.tooltip().textFormatter(function () {
-            return '<span style="color: #d9d9d9">Density</span>: ' + parseFloat(this.getData('density')).toLocaleString() + ' pop./km&#178 <br/>' +
-                '<span style="color: #d9d9d9">Population</span>: ' + parseInt(this.getData('population')).toLocaleString() + '<br/>' +
-                '<span style="color: #d9d9d9">Area</span>: ' + parseInt(this.getData('area')).toLocaleString() + ' km&#178';
+            return '<span style="color: #d9d9d9">Density</span>: ' + parseFloat(this.getDataValue('density')).toLocaleString() + ' pop./km&#178 <br/>' +
+                '<span style="color: #d9d9d9">Population</span>: ' + parseInt(this.getDataValue('population')).toLocaleString() + '<br/>' +
+                '<span style="color: #d9d9d9">Area</span>: ' + parseInt(this.getDataValue('area')).toLocaleString() + ' km&#178';
         });
     }
     AppComponent.prototype.ngAfterViewInit = function () {

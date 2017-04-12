@@ -76,7 +76,7 @@ export class AppComponent {
 
     // Setup same settings for all charts
     function setupBarSeriesSettings(series: any) {
-      series.tooltip().titleFormat(function() {
+      series.tooltip().titleFormatter(function() {
         return this.x
       });
       series.tooltip().textFormatter(function() {

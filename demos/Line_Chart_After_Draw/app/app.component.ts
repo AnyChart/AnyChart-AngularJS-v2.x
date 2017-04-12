@@ -70,13 +70,13 @@ export class AppComponent {
     chart.yAxis().title('DTI');
 
     // format y axis labels
-    chart.yAxis().labels().format("{%Value}%");
+    chart.yAxis().labels().textFormatter("{%Value}%");
 
     // create extra y axis on the right
     // primary Y Scale setup earlier is used by default
     // setting it up explictly look like this: chart.yAxis(1).scale(chart.yScale());
     chart.yAxis(1).orientation('right').enabled(true);
-    chart.yAxis(1).labels().format("{%Value}%");
+    chart.yAxis(1).labels().textFormatter("{%Value}%");
 
     // create range axes markers
     chart.rangeMarker().from(20).to(28).fill('#4db6ac 0.4');

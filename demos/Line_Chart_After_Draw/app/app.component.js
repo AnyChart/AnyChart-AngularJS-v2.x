@@ -48,12 +48,12 @@ var AppComponent = (function () {
             // change yAxis title text settings
             chart.yAxis().title('DTI');
             // format y axis labels
-            chart.yAxis().labels().format("{%Value}%");
+            chart.yAxis().labels().textFormatter("{%Value}%");
             // create extra y axis on the right
             // primary Y Scale setup earlier is used by default
             // setting it up explictly look like this: chart.yAxis(1).scale(chart.yScale());
             chart.yAxis(1).orientation('right').enabled(true);
-            chart.yAxis(1).labels().format("{%Value}%");
+            chart.yAxis(1).labels().textFormatter("{%Value}%");
             // create range axes markers
             chart.rangeMarker().from(20).to(28).fill('#4db6ac 0.4');
             chart.rangeMarker(1).from(28).to(38).fill('#80cbc4 0.4');

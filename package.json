@@ -1,6 +1,6 @@
 {
   "name": "anychart-angular2",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Angular2 directives for AnyChart",
   "scripts": {
     "watch": "tsc -p src -w",

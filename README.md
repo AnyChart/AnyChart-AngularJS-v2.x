@@ -85,7 +85,7 @@ Here's a basic sample that shows how to quickly create an Angular2 application w
 
 ## Build
 
-1) Despite the AnyChart-Angular2 integration is available with package managers, the license allows to modify and use it freely (though you [need AnyChart license to use the library](http://anychart.com/buy) itself in commercial projects). This quick start guide clarifies the structure of integration project and explains how it works and how it can be used.
+1) Despite the AnyChart-Angular2 integration is available with package managers, the license allows to modify and use it freely (though you [need AnyChart license to use the library](https://anychart.com/buy) itself in commercial projects). This quick start guide clarifies the structure of integration project and explains how it works and how it can be used.
 
 If the integration is cloned from GitHub and Node Package Manager (`npm` command) is available in command line, the following command compiles source code to **dist/** directory:
 
@@ -210,7 +210,17 @@ charts on the anychart stage and how to add the after-draw handler.
 
 ## License
 
-[© AnyChart.com - JavaScript charts](https://www.anychart.com). All rights reserved.
+AnyChart Angular2 plugin includes two parts:
+- code of the plugin that allows to use Javascript library (in this case, AnyChart) 
+with Angular Framework. You can use, edit, modify it, use it with other Javascript libraries
+ without any restrictions. It is released under [Apache 2.0 License](LICENSE).
+- AnyChart JavaScript library. It is released under Commercial license. 
+You can test this plugin with the trial version of AnyChart. Our trial version is not 
+limited by time and doesn't contain any feature limitations. 
+Check details [here](https://www.anychart.com/buy/) 
+
+If you have any questions regarding licensing - please contact us. <sales@anychart.com>
+
 [![Analytics](https://ga-beacon.appspot.com/UA-228820-4/Plugins/AngularJS-v2x?pixel&useReferer)](https://github.com/igrigorik/ga-beacon)
 
 

@@ -8,8 +8,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var anychart_service_1 = require('./anychart.service');
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var anychart_service_1 = require("./anychart.service");
 var AnychartStageDirective = (function () {
     function AnychartStageDirective(el, acService) {
         this.el = el;
@@ -25,16 +26,17 @@ var AnychartStageDirective = (function () {
             }
         }
     };
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Object)
-    ], AnychartStageDirective.prototype, "acInstance", void 0);
-    AnychartStageDirective = __decorate([
-        core_1.Directive({
-            selector: '[anychartStage]'
-        }), 
-        __metadata('design:paramtypes', [core_1.ElementRef, anychart_service_1.AnychartService])
-    ], AnychartStageDirective);
     return AnychartStageDirective;
 }());
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Object)
+], AnychartStageDirective.prototype, "acInstance", void 0);
+AnychartStageDirective = __decorate([
+    core_1.Directive({
+        selector: '[anychartStage]'
+    }),
+    __metadata("design:paramtypes", [core_1.ElementRef,
+        anychart_service_1.AnychartService])
+], AnychartStageDirective);
 exports.AnychartStageDirective = AnychartStageDirective;

@@ -8,8 +8,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var anychart_service_1 = require('./anychart.service');
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var anychart_service_1 = require("./anychart.service");
 var AnymapDirective = (function () {
     function AnymapDirective(el, acService) {
         this.el = el;
@@ -24,44 +25,45 @@ var AnymapDirective = (function () {
             instance.legend(this.acLegend !== 'false');
         this.acService.addChart(instance, this.acChartDraw, this.acChartId, this.el.nativeElement);
     };
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], AnymapDirective.prototype, "acType", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Object)
-    ], AnymapDirective.prototype, "acData", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Object)
-    ], AnymapDirective.prototype, "acTitle", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Object)
-    ], AnymapDirective.prototype, "acLegend", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Object)
-    ], AnymapDirective.prototype, "acInstance", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Function)
-    ], AnymapDirective.prototype, "acChartDraw", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], AnymapDirective.prototype, "acGeoData", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], AnymapDirective.prototype, "acChartId", void 0);
-    AnymapDirective = __decorate([
-        core_1.Directive({
-            selector: '[anymap]'
-        }), 
-        __metadata('design:paramtypes', [core_1.ElementRef, anychart_service_1.AnychartService])
-    ], AnymapDirective);
     return AnymapDirective;
 }());
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], AnymapDirective.prototype, "acType", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Object)
+], AnymapDirective.prototype, "acData", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Object)
+], AnymapDirective.prototype, "acTitle", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Object)
+], AnymapDirective.prototype, "acLegend", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Object)
+], AnymapDirective.prototype, "acInstance", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Function)
+], AnymapDirective.prototype, "acChartDraw", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], AnymapDirective.prototype, "acGeoData", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], AnymapDirective.prototype, "acChartId", void 0);
+AnymapDirective = __decorate([
+    core_1.Directive({
+        selector: '[anymap]'
+    }),
+    __metadata("design:paramtypes", [core_1.ElementRef,
+        anychart_service_1.AnychartService])
+], AnymapDirective);
 exports.AnymapDirective = AnymapDirective;

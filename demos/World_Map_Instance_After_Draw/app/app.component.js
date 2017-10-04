@@ -73,28 +73,28 @@ var AppComponent = (function () {
             chart.minBubbleSize(2);
         };
         this.myMap.interactivity().selectionMode('none');
-        var density_data = this.mySeriesData.mapAs(undefined, { 'size': ['population'] });
+        var density_data = this.mySeriesData.mapAs({ 'size': ['population'] });
         var series = this.myMap.bubble(density_data);
         series.labels().enabled(false);
         series.selectionMode("none");
-        series.tooltip().textWrap('byLetter').useHtml(true);
-        series.tooltip().textFormatter(function () {
-            return '<span style="color: #d9d9d9">Density</span>: ' + parseFloat(this.getDataValue('density')).toLocaleString() + ' pop./km&#178 <br/>' +
-                '<span style="color: #d9d9d9">Population</span>: ' + parseInt(this.getDataValue('population')).toLocaleString() + '<br/>' +
-                '<span style="color: #d9d9d9">Area</span>: ' + parseInt(this.getDataValue('area')).toLocaleString() + ' km&#178';
+        series.tooltip().useHtml(true);
+        series.tooltip().format(function () {
+            return '<span style="color: #d9d9d9">Density</span>: ' + parseFloat(this.getData('density')).toLocaleString() + ' pop./km&#178 <br/>' +
+                '<span style="color: #d9d9d9">Population</span>: ' + parseInt(this.getData('population')).toLocaleString() + '<br/>' +
+                '<span style="color: #d9d9d9">Area</span>: ' + parseInt(this.getData('area')).toLocaleString() + ' km&#178';
         });
         var series_choropleth = this.myMap.choropleth(density_data);
         series_choropleth.selectionMode("none");
         series_choropleth.fill('#eaeaea');
         series_choropleth.stroke('#D2D2D2');
-        series_choropleth.hoverStroke('#eaeaea');
-        series_choropleth.hoverFill('#D2D2D2');
+        series_choropleth.hovered().stroke('#eaeaea');
+        series_choropleth.hovered().fill('#D2D2D2');
         series_choropleth.labels(null);
-        series_choropleth.tooltip().textWrap('byLetter').useHtml(true);
-        series_choropleth.tooltip().textFormatter(function () {
-            return '<span style="color: #d9d9d9">Density</span>: ' + parseFloat(this.getDataValue('density')).toLocaleString() + ' pop./km&#178 <br/>' +
-                '<span style="color: #d9d9d9">Population</span>: ' + parseInt(this.getDataValue('population')).toLocaleString() + '<br/>' +
-                '<span style="color: #d9d9d9">Area</span>: ' + parseInt(this.getDataValue('area')).toLocaleString() + ' km&#178';
+        series_choropleth.tooltip().useHtml(true);
+        series_choropleth.tooltip().format(function () {
+            return '<span style="color: #d9d9d9">Density</span>: ' + parseFloat(this.getData('density')).toLocaleString() + ' pop./km&#178 <br/>' +
+                '<span style="color: #d9d9d9">Population</span>: ' + parseInt(this.getData('population')).toLocaleString() + '<br/>' +
+                '<span style="color: #d9d9d9">Area</span>: ' + parseInt(this.getData('area')).toLocaleString() + ' km&#178';
         });
     }
     AppComponent.prototype.ngAfterViewInit = function () {

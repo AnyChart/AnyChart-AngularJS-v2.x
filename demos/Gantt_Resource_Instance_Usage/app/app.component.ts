@@ -13,7 +13,7 @@ export class AppComponent {
 
   constructor(private acService: AnychartService) { }
 
-  myData = anychart.data.tree(getData(), anychart.enums.TreeFillingMethod.AS_TABLE);
+  myData = anychart.data.tree(getData(), 'as-table');
 
   myChart = anychart.ganttResource();
 

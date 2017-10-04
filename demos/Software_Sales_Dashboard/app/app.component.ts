@@ -45,16 +45,16 @@ export class AppComponent {
       var xAxis = chart.xAxis();
       xAxis.title(false);
       xAxis.staggerMode(false);
-      chart.yAxis().labels().textFormatter(function() {
+      chart.yAxis().labels().format(function() {
         return formatMoney(parseInt(this.value), 0, '.', ',');
       });
 
       // Create area series
       unitSeries = chart.area();
-      unitSeries.tooltip().titleFormatter(function() {
+      unitSeries.tooltip().titleFormat(function() {
         return this.x
       });
-      unitSeries.tooltip().textFormatter(function() {
+      unitSeries.tooltip().format(function() {
         return '$' + formatMoney(this.value, 0, '.', ',')
       });
       return chart;
@@ -73,10 +73,10 @@ export class AppComponent {
 
     // Setup same settings for all charts
     function setupBarSeriesSettings(series: any) {
-      series.tooltip().titleFormatter(function() {
+      series.tooltip().titleFormat(function() {
         return this.x
       });
-      series.tooltip().textFormatter(function() {
+      series.tooltip().format(function() {
         return '$' + formatMoney(this.value, 0, '.', ',')
       });
       series.listen('pointClick', function(e: any) {

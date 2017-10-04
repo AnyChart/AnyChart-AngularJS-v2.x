@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var Chart = (function () {
     function Chart(instance_, container_, chartDraw_) {
         this.instance_ = instance_;

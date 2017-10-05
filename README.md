@@ -85,7 +85,7 @@ Here's a basic sample that shows how to quickly create an Angular2 application w
 
 ## Build
 
-1) Despite the AnyChart-Angular2 integration is available with package managers, the license allows to modify and use it freely (though you [need AnyChart license to use the library](https://anychart.com/buy) itself in commercial projects). This quick start guide clarifies the structure of integration project and explains how it works and how it can be used.
+1) Despite the AnyChart-Angular2 integration is available with package managers, the license allows to modify and use it freely (though you [need AnyChart license to use the library](https://www.anychart.com/buy) itself in commercial projects). This quick start guide clarifies the structure of integration project and explains how it works and how it can be used.
 
 If the integration is cloned from GitHub and Node Package Manager (`npm` command) is available in command line, the following command compiles source code to **dist/** directory:
 

@@ -62,7 +62,7 @@ var AppComponent = (function () {
                 .value(24)
                 .fontColor('#263238')
                 .align('right')
-                .anchor('leftcenter')
+                .anchor('left-center')
                 .offsetX(10)
                 .useHtml(true)
                 .text('<strong>Below 28%</strong><br/>Buy! Buy! Buy!');
@@ -70,7 +70,7 @@ var AppComponent = (function () {
                 .value(33)
                 .fontColor('#263238')
                 .align('right')
-                .anchor('leftcenter')
+                .anchor('left-center')
                 .offsetX(10)
                 .useHtml(true)
                 .text('<strong>28%-38%</strong><br/>Marginally affordable with<br/>fixed-rate mortgages.');
@@ -78,7 +78,7 @@ var AppComponent = (function () {
                 .value(43)
                 .fontColor('#263238')
                 .align('right')
-                .anchor('leftcenter')
+                .anchor('left-center')
                 .offsetX(10)
                 .useHtml(true)
                 .text('<strong>38%-48%</strong><br/>Purchase is not affordable<br/>with fixed-rate mortgage.');
@@ -86,7 +86,7 @@ var AppComponent = (function () {
                 .value(56)
                 .align('right')
                 .fontColor('#263238')
-                .anchor('leftcenter')
+                .anchor('left-center')
                 .offsetX(10)
                 .useHtml(true)
                 .text('<strong>48% or greater</strong><br/>Not affordable with fixed<br/>or interest only.<br/>Negative amortization<br/>only option.');

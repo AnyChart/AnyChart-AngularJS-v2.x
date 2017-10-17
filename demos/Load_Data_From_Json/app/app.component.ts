@@ -1,10 +1,7 @@
-import {Component} from '@angular/core';
-import {AnychartService} from 'anychart-angular2/components';
-import {Http, Response} from '@angular/http';
+import { Component } from '@angular/core';
+import { AnychartService } from 'anychart-angular2/components';
+import { Http, Response } from '@angular/http';
 import 'rxjs/Rx';
-import {enableProdMode} from '@angular/core';
-
-enableProdMode();
 
 @Component({
     moduleId: module.id,
@@ -13,21 +10,20 @@ enableProdMode();
 })
 export class AppComponent {
 
-    constructor(private acService:AnychartService, private http:Http) {
-    }
+  constructor(private acService: AnychartService, private http: Http) { }
 
-    ngAfterViewInit() {
-        var service = this.acService;
-        this.http.get('data/sample1.json')
-            .map(response => response.json())
-            .subscribe(function (data) {
-                //chart here is wrapper over the real chart instance.
-                var chart = service.getChart('myChart');
+  ngAfterViewInit() {
+    var service = this.acService;
+    this.http.get('../data/sample1.json')
+        .map(response => response.json())
+        .subscribe(function(data) {
+          //chart here is wrapper over the real chart instance.
+          var chart = service.getChart('myChart');
 
-                if (chart && chart.instance.data)
-                    chart.instance.data(data);
+          if (chart && chart.instance.data)
+            chart.instance.data(data);
 
-                service.drawAll();
-            });
-    }
+          service.drawAll();
+        });
+  }
 }

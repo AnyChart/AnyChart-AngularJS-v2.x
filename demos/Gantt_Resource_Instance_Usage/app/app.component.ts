@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AnychartService } from 'anychart-angular2/components';
-import { enableProdMode } from '@angular/core';
 
-enableProdMode();
 
 declare var getData: Function;
 
@@ -15,7 +13,7 @@ export class AppComponent {
 
   constructor(private acService: AnychartService) { }
 
-  myData = anychart.data.tree(getData(), anychart.enums.TreeFillingMethod.AS_TABLE);
+  myData = anychart.data.tree(getData(), 'as-table');
 
   myChart = anychart.ganttResource();
 

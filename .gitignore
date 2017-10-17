@@ -1,8 +1,8 @@
 .idea
+node_modules
 jspm_packages
 npm-debug.*
 link-checker-results.txt
-node_modules
 app/**/*.js
 *.js.map
 e2e/**/*.js

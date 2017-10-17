@@ -10,12 +10,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var components_1 = require('anychart-angular2/components');
-var core_2 = require('@angular/core');
-core_2.enableProdMode();
 var AppComponent = (function () {
     function AppComponent(acService) {
         this.acService = acService;
-        this.myData = anychart.data.tree(getData(), anychart.enums.TreeFillingMethod.AS_TABLE);
+        this.myData = anychart.data.tree(getData(), 'as-table');
         this.myChart = anychart.ganttResource();
         this.myAfterDraw = function (chart) {
             chart.zoomTo(Date.UTC(2014, 3, 8), Date.UTC(2014, 3, 13));

@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AnychartService } from 'anychart-angular2/components';
-import { enableProdMode } from '@angular/core';
 
-enableProdMode();
 
 declare var get_msft_daily_short_data: Function;
 declare var get_orcl_daily_short_data: Function;

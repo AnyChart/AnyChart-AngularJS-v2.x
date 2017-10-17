@@ -12,8 +12,6 @@ var core_1 = require('@angular/core');
 var components_1 = require('anychart-angular2/components');
 var http_1 = require('@angular/http');
 require('rxjs/Rx');
-var core_2 = require('@angular/core');
-core_2.enableProdMode();
 var AppComponent = (function () {
     function AppComponent(acService, http) {
         this.acService = acService;
@@ -21,7 +19,7 @@ var AppComponent = (function () {
     }
     AppComponent.prototype.ngAfterViewInit = function () {
         var service = this.acService;
-        this.http.get('data/sample1.json')
+        this.http.get('../data/sample1.json')
             .map(function (response) { return response.json(); })
             .subscribe(function (data) {
             //chart here is wrapper over the real chart instance.

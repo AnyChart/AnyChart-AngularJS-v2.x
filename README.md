@@ -1,9 +1,9 @@
-[<img src="https://cdn.anychart.com/images/logo-transparent-segoe.png?2" width="234px" alt="AnyChart - Robust JavaScript/HTML5 Chart library for any project">](http://www.anychart.com)
+[<img src="https://cdn.anychart.com/images/logo-transparent-segoe.png?2" width="234px" alt="AnyChart - Robust JavaScript/HTML5 Chart library for any project">](https://www.anychart.com)
 
 AngularJS v2.x directives for AnyChart
 =========
 
-AngularJS v2.x directives for AnyChart provide an easy way to use [AnyChart JavaScript Charts](http://anychart.com)
+AngularJS v2.x directives for AnyChart provide an easy way to use [AnyChart JavaScript Charts](https://anychart.com)
 with [Angular2 Framework](https://angular.io/). 
 
 ## Table of Contents
@@ -85,7 +85,7 @@ Here's a basic sample that shows how to quickly create an Angular2 application w
 
 ## Build
 
-1) Despite the AnyChart-Angular2 integration is available with package managers, the license allows to modify and use it freely (though you [need AnyChart license to use the library](http://anychart.com/buy) itself in commercial projects). This quick start guide clarifies the structure of integration project and explains how it works and how it can be used.
+1) Despite the AnyChart-Angular2 integration is available with package managers, the license allows to modify and use it freely (though you [need AnyChart license to use the library](https://www.anychart.com/buy) itself in commercial projects). This quick start guide clarifies the structure of integration project and explains how it works and how it can be used.
 
 If the integration is cloned from GitHub and Node Package Manager (`npm` command) is available in command line, the following command compiles source code to **dist/** directory:
 
@@ -189,7 +189,7 @@ charts on the anychart stage and how to add the after-draw handler.
 
 ## Contacts
 
-* Web: [www.anychart.com](http://www.anychart.com)
+* Web: [www.anychart.com](https://www.anychart.com)
 * Email: [contact@anychart.com](mailto:contact@anychart.com)
 * Twitter: [anychart](https://twitter.com/anychart)
 * Facebook: [AnyCharts](https://www.facebook.com/AnyCharts)
@@ -197,20 +197,31 @@ charts on the anychart stage and how to add the after-draw handler.
 
 ## Links
 
-* [AnyChart Website](http://www.anychart.com)
-* [Download AnyChart](http://www.anychart.com/download/)
-* [AnyChart Licensing](http://www.anychart.com/buy/)
-* [AnyChart Support](http://www.anychart.com/support/)
+* [AnyChart Website](https://www.anychart.com)
+* [Download AnyChart](https://www.anychart.com/download/)
+* [AnyChart Licensing](https://www.anychart.com/buy/)
+* [AnyChart Support](https://www.anychart.com/support/)
 * [Report Issues](https://github.com/AnyChart/AnyChart-AngularJS-2.x/issues)
-* [AnyChart Playground](http://playground.anychart.com)
-* [AnyChart Documentation](http://docs.anychart.com)
-* [AnyChart API Reference](http://api.anychart.com)
-* [AnyChart Sample Solutions](http://www.anychart.com/solutions/)
-* [AnyChart Integrations](http://www.anychart.com/integrations/)
+* [AnyChart Playground](https://playground.anychart.com)
+* [AnyChart Documentation](https://docs.anychart.com)
+* [AnyChart API Reference](https://api.anychart.com)
+* [AnyChart Sample Solutions](https://www.anychart.com/solutions/)
+* [AnyChart Integrations](https://www.anychart.com/integrations/)
 
 ## License
 
-[© AnyChart.com - JavaScript charts](http://www.anychart.com). All rights reserved.
+AnyChart Angular2 plugin includes two parts:
+- code of the plugin that allows to use Javascript library (in this case, AnyChart)
+with Angular Framework. You can use, edit, modify it, use it with other Javascript libraries
+ without any restrictions. It is released under [Apache 2.0 License](LICENSE).
+- AnyChart JavaScript library. It is released under Commercial license.
+You can test this plugin with the trial version of AnyChart. Our trial version is not
+limited by time and doesn't contain any feature limitations.
+Check details [here](https://www.anychart.com/buy/)
+
+If you have any questions regarding licensing - please contact us. <sales@anychart.com>
+
+[![Analytics](https://ga-beacon.appspot.com/UA-228820-4/Plugins/AngularJS-v2x?pixel&useReferer)](https://github.com/igrigorik/ga-beacon)
 
 
 
@@ -219,4 +230,4 @@ charts on the anychart stage and how to add the after-draw handler.
 
 
 
-   
+

@@ -46,12 +46,12 @@ var AppComponent = (function () {
             // change yAxis title text settings
             chart.yAxis().title('DTI');
             // format y axis labels
-            chart.yAxis().labels().textFormatter("{%Value}%");
+            chart.yAxis().labels().format("{%Value}%");
             // create extra y axis on the right
             // primary Y Scale setup earlier is used by default
             // setting it up explictly look like this: chart.yAxis(1).scale(chart.yScale());
             chart.yAxis(1).orientation('right').enabled(true);
-            chart.yAxis(1).labels().textFormatter("{%Value}%");
+            chart.yAxis(1).labels().format("{%Value}%");
             // create range axes markers
             chart.rangeMarker().from(20).to(28).fill('#4db6ac 0.4');
             chart.rangeMarker(1).from(28).to(38).fill('#80cbc4 0.4');
@@ -100,11 +100,11 @@ var AppComponent = (function () {
         var s2;
         var s3;
         s1 = this.myChart.line(seriesData_1);
-        s1.name('Beechum County').hoverMarkers().enabled(true).type('circle').size(4);
+        s1.name('Beechum County').hovered().markers().enabled(true).type('circle').size(4);
         s2 = this.myChart.line(seriesData_2);
-        s2.name('Greenbow County').hoverMarkers().enabled(true).type('circle').size(4);
+        s2.name('Greenbow County').hovered().markers().enabled(true).type('circle').size(4);
         s3 = this.myChart.line(seriesData_3);
-        s3.name('Belle Reve Parish').hoverMarkers().enabled(true).type('circle').size(4);
+        s3.name('Belle Reve Parish').hovered().markers().enabled(true).type('circle').size(4);
     }
     AppComponent.prototype.ngAfterViewInit = function () {
         this.acService.drawAll();

@@ -14,7 +14,7 @@ export class AppComponent {
 
   ngAfterViewInit() {
     var service = this.acService;
-    this.http.get('/data/sample1.json')
+    this.http.get('./data/sample1.json')
         .map(response => response.json())
         .subscribe(function(data) {
           //chart here is wrapper over the real chart instance.

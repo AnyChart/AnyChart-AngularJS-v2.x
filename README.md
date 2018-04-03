@@ -38,7 +38,17 @@ Please, note: [components.js](https://github.com/AnyChart/AnyChart-AngularJS-2.x
 export basic Anychart-Angular2 integration functionality.
 
 ## Quick start
-Here's a basic sample that shows how to quickly create an Angular2 application with AnyChart component:
+Here's a basic sample that shows how to quickly create an Angular2 application with AnyChart component.
+
+Create a project derictory and enter into it.
+
+Install Angular2-plugin:
+
+`npm install anychart-angular2`
+
+Paste `systemjs.config.js` file into this derictory. You can get this file from one of demos.
+
+Create `index.html` file with the following template:
 ```html
 <!DOCTYPE html>
 <html>
@@ -48,16 +58,16 @@ Here's a basic sample that shows how to quickly create an Angular2 application w
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Polyfill(s) for older browsers -->
-    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="../node_modules/core-js/client/shim.min.js"></script>
 
     <!-- Add zone.js (https://github.com/angular/zone.js/) -->
-    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="../node_modules/zone.js/dist/zone.js"></script>
     
     <!-- Add modules loader -->
-    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="../node_modules/systemjs/dist/system.src.js"></script>
     
     <!-- Include anychart component -->
-    <script src="node_modules/anychart/dist/anychart-bundle.min.js"></script>
+    <script src="../node_modules/anychart/dist/anychart-bundle.min.js"></script>
 
     <!-- General section, this configuration adds all the requirements to run -->
     <script src="systemjs.config.js"></script>
@@ -72,7 +82,7 @@ Here's a basic sample that shows how to quickly create an Angular2 application w
 </body>
 </html>
 ```
-
+Also, in this directory you should create the app folder and Angular application file `/app/main.js:`.
 
 
 ## Run the demo 

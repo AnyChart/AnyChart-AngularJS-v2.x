@@ -4,7 +4,8 @@
   "description": "Angular2 directives for AnyChart",
   "scripts": {
     "watch": "tsc -p src -w",
-    "build": "rm -rf dist && tsc -p src"
+    "build": "rm -rf dist && tsc -p src",
+    "install-demos": "node install-demos.js"
   },
   "repository": {
     "type": "git",
